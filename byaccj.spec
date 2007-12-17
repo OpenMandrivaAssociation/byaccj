@@ -37,7 +37,6 @@ License:        Public Domain
 URL:            http://byaccj.sourceforge.net/
 Group:          Development/Java
 Source0:        http://downloads.sourceforge.net/byaccj/byaccj1.11_src.tar.gz
-BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:       man-pages
 
 %description
