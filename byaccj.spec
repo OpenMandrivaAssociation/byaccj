@@ -1,4 +1,4 @@
-# Copyright (c) 2000-2005, JPackage Project
+# Copyright (c) 2000-2008, JPackage Project
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -30,13 +30,13 @@
 
 Summary:        Parser Generator with Java Extension
 Name:           byaccj
-Version:        1.11
-Release:        %mkrel 2.2.1
+Version:        1.14
+Release:        %mkrel 0.1.1
 Epoch:          0
 License:        Public Domain
 URL:            http://byaccj.sourceforge.net/
 Group:          Development/Java
-Source0:        http://downloads.sourceforge.net/byaccj/byaccj1.11_src.tar.gz
+Source0:        http://downloads.sourceforge.net/byaccj/byaccj1.14_src.tar.gz
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root
 Requires:       man-pages
 
