@@ -63,24 +63,24 @@ popd
 sed -i 's/\r//g' docs/tf.y
 
 %install
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 # manual
-install -d -m 755 $RPM_BUILD_ROOT%{_mandir}/man1
-mv docs/yacc.cat $RPM_BUILD_ROOT%{_mandir}/man1
+install -d -m 755 %{buildroot}%{_mandir}/man1
+mv docs/yacc.cat %{buildroot}%{_mandir}/man1
 
 # jars
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
+mkdir -p %{buildroot}%{_bindir}
 cp -p src/yacc.linux \
-  $RPM_BUILD_ROOT%{_bindir}/%{name}
+  %{buildroot}%{_bindir}/%{name}
 
-mkdir -p $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-cp -p docs/* $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-cp -p src/readme $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
-cp -p src/README $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
+mkdir -p %{buildroot}%{_docdir}/%{name}-%{version}
+cp -p docs/* %{buildroot}%{_docdir}/%{name}-%{version}
+cp -p src/readme %{buildroot}%{_docdir}/%{name}-%{version}
+cp -p src/README %{buildroot}%{_docdir}/%{name}-%{version}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(0644,root,root,0755)
