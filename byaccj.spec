@@ -28,11 +28,12 @@
 # (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 # OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
+%define debug_package %{nil}
 
 Summary:	Parser Generator with Java Extension
 Name:		byaccj
 Version:	1.15
-Release:	7.0%{?dist}
+Release:	7.1
 Epoch:		0
 License:	Public Domain
 URL:		http://byaccj.sourceforge.net/
