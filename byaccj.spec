@@ -33,7 +33,7 @@
 Summary:	Parser Generator with Java Extension
 Name:		byaccj
 Version:	1.15
-Release:	7.1
+Release:	7.2
 Epoch:		0
 License:	Public Domain
 URL:		http://byaccj.sourceforge.net/
