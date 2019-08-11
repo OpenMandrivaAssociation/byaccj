@@ -1,0 +1,23 @@
+diff -up byaccj1.15/src/main.c.omv~ byaccj1.15/src/main.c
+--- byaccj1.15/src/main.c.omv~	2019-08-11 14:18:34.188667765 +0200
++++ byaccj1.15/src/main.c	2019-08-11 14:18:42.684702552 +0200
+@@ -1,6 +1,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <string.h>
++#include <unistd.h>
+ 
+ #ifndef __WIN32__  /*rwj  --  make portable*/
+ #include <signal.h>
+diff -up byaccj1.15/src/output.c.omv~ byaccj1.15/src/output.c
+--- byaccj1.15/src/output.c.omv~	2019-08-11 14:19:45.515960684 +0200
++++ byaccj1.15/src/output.c	2019-08-11 14:20:30.688147150 +0200
+@@ -843,7 +843,7 @@ char *s;
+ 	fprintf(defines_file, " YYSTYPE;\nextern YYSTYPE yylval;\n");
+     }
+     if (jflag && dflag)
+-	fprintf(defines_file, "}\n",jclass_name,JAVA_INTERFACE_SUFFIX);    
++	fprintf(defines_file, "}\n");    
+ }
+ 
+ 
