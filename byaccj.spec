@@ -3,7 +3,7 @@ Name:		byaccj
 Version:	1.15
 Release:	9
 License:	Public Domain
-URL:		http://byaccj.sourceforge.net/
+URL:		https://byaccj.sourceforge.net/
 
 Source0:	http://sourceforge.net/projects/byaccj/files/byaccj/1.15/byaccj1.15_src.tar.gz
 Patch0:		byaccj-1.15-fix-warnings.patch
