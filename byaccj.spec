@@ -8,6 +8,7 @@ URL:		https://byaccj.sourceforge.net/
 Source0:	http://sourceforge.net/projects/byaccj/files/byaccj/1.15/byaccj1.15_src.tar.gz
 Patch0:		byaccj-1.15-fix-warnings.patch
 
+BuildRequires:	make
 %description
 BYACC/J is an extension of the Berkeley v 1.8 YACC-compatible 
 parser generator. Standard YACC takes a YACC source file, and 
